@@ -4,10 +4,10 @@ import os
 from celery import Celery
 
 # Set default Django settings for Celery
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gemini_verification_service.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'data_extraction_service.settings')
 
 # Initialize Celery app
-app = Celery('gemini_verification_service')
+app = Celery('data_extraction_service')
 
 # Configure Celery using Django's settings
 app.config_from_object('django.conf:settings', namespace='CELERY')

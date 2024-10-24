@@ -7,7 +7,7 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault(
-        "DJANGO_SETTINGS_MODULE", "gemini_verification_service.settings"
+        "DJANGO_SETTINGS_MODULE", "data_extraction_service.settings"
     )
     try:
         from django.core.management import execute_from_command_line # type: ignore

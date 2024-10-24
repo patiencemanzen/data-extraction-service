@@ -1,5 +1,5 @@
 """
-URL configuration for gemini_verification_service project.
+URL configuration for data_extraction_service project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -26,7 +26,7 @@ def home(request):
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/', include('verification_service.urls')),
+    path('api/', include('data_extraction_app.urls')),
     path('', home, name='home'), 
 ]
 

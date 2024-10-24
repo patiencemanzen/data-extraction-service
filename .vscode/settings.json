@@ -1,5 +1,5 @@
 {
     "python.analysis.extraPaths": [
-        "./gemini_verification_service"
+        "./data_extraction_service"
     ]
 }

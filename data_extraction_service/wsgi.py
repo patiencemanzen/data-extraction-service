@@ -1,5 +1,5 @@
 """
-WSGI config for gemini_verification_service project.
+WSGI config for data_extraction_service project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gemini_verification_service.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "data_extraction_service.settings")
 
 application = get_wsgi_application()
