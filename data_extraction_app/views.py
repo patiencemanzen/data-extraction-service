@@ -1,16 +1,12 @@
 from rest_framework import status # type: ignore
 from rest_framework.response import Response # type: ignore
 from rest_framework.views import APIView # type: ignore
-from .models import UploadedFile
 from .serializers import UploadedFileSerializer
 from .services import DataExtractionService
 from .forms import UploadForm
 from django.middleware.csrf import get_token # type: ignore
 from rest_framework.decorators import api_view # type: ignore
 from django.views.decorators.csrf import csrf_exempt # type: ignore
-
-from googleapiclient.errors import HttpError # type: ignore
-from google.api_core.exceptions import InternalServerError # type: ignore
 
 from .tasks import extract_data_task
 import redis # type: ignore
