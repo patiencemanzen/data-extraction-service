@@ -1,1 +1,1 @@
-
+The Document Data Extraction AI Service is a Django-based application designed to handle file uploads and data extraction. The service includes an API endpoint for uploading files and a data extraction service and supports OCR
